@@ -1,0 +1,2 @@
+# Preserve release bytes so SHA256.json also verifies a Git checkout.
+* -text

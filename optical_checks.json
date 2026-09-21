@@ -1,0 +1,149 @@
+{
+  "method": "Both lens origins, 18 mm baseline, 3.7 mm behind front glass; nominal pinhole rays. No measured intrinsics, distortion or depth matching.",
+  "nominal_fov_deg": [
+    87,
+    58
+  ],
+  "coverage_check_fov_deg": [
+    82,
+    56
+  ],
+  "guard_clearance_check_fov_deg": [
+    94,
+    68
+  ],
+  "guard_origin_half_width_allowance_mm": 2,
+  "guard_cone_intersections_mm3": [
+    0.0,
+    0.0
+  ],
+  "depth_reference": "Axial distance from the published depth start point, not Euclidean front-glass distance.",
+  "minimum_depth_by_resolution_mm": {
+    "1280x720": 100,
+    "848x480": 70,
+    "640x360": 55,
+    "480x270": 45,
+    "424x240": 40
+  },
+  "recommended_far_working_distance_mm": 500,
+  "far_distance_is_hard_clipping_plane": false,
+  "target_depth_capture_resolution": [
+    848,
+    480
+  ],
+  "target_depth_minimum_mm": 70,
+  "policy_input": "224 or 256 square, preserve complete field with aspect-ratio-preserving resize and padding; do not centre-crop away the jaws.",
+  "closed_all_TPU": [
+    {
+      "lens_local_x_mm": -9,
+      "depth_mm": [
+        87.96576672814358,
+        159.80783921518153
+      ],
+      "required_fov_deg": [
+        40.37793608385809,
+        34.50134531840658
+      ],
+      "conservative_82x56_fov_all_inside": true,
+      "minimum_frame_margin_fraction": 0.20799735055935142,
+      "all_within_70_to_500_mm": true,
+      "all_within_100_to_500_mm": false
+    },
+    {
+      "lens_local_x_mm": 9,
+      "depth_mm": [
+        87.96576672814358,
+        159.80783921518153
+      ],
+      "required_fov_deg": [
+        40.37793608385809,
+        34.50134531840658
+      ],
+      "conservative_82x56_fov_all_inside": true,
+      "minimum_frame_margin_fraction": 0.20799735055935142,
+      "all_within_70_to_500_mm": true,
+      "all_within_100_to_500_mm": false
+    }
+  ],
+  "closed_exposed_TPU": [
+    {
+      "lens_local_x_mm": -9,
+      "depth_mm": [
+        114.65320720976271,
+        159.80783921518153
+      ],
+      "required_fov_deg": [
+        26.384994202717515,
+        15.500913652971995
+      ],
+      "conservative_82x56_fov_all_inside": true,
+      "minimum_frame_margin_fraction": 0.36517122468040875,
+      "all_within_70_to_500_mm": true,
+      "all_within_100_to_500_mm": true
+    },
+    {
+      "lens_local_x_mm": 9,
+      "depth_mm": [
+        114.65320720976271,
+        159.80783921518153
+      ],
+      "required_fov_deg": [
+        26.384994202717515,
+        15.500913652971995
+      ],
+      "conservative_82x56_fov_all_inside": true,
+      "minimum_frame_margin_fraction": 0.36517122468040875,
+      "all_within_70_to_500_mm": true,
+      "all_within_100_to_500_mm": true
+    }
+  ],
+  "exposed_stress_envelope": [
+    {
+      "lens_local_x_mm": -9,
+      "depth_mm": [
+        96.66282615299613,
+        164.80783921518153
+      ],
+      "required_fov_deg": [
+        77.55637065428657,
+        29.828694162704355
+      ],
+      "conservative_82x56_fov_all_inside": true,
+      "minimum_frame_margin_fraction": 0.03790047984076711,
+      "all_within_70_to_500_mm": true,
+      "all_within_100_to_500_mm": false
+    },
+    {
+      "lens_local_x_mm": 9,
+      "depth_mm": [
+        96.66282615299613,
+        164.80783921518153
+      ],
+      "required_fov_deg": [
+        77.55637065428657,
+        29.828694162704355
+      ],
+      "conservative_82x56_fov_all_inside": true,
+      "minimum_frame_margin_fraction": 0.03790047984076711,
+      "all_within_70_to_500_mm": true,
+      "all_within_100_to_500_mm": false
+    }
+  ],
+  "stress_method": "Independent vertex translations: each jaw outward 0/20/42.5 mm, Y 0/-15 mm, X and Z +/-10 mm. Deliberately a geometric envelope, NOT a solved Robotiq linkage or deformation simulation.",
+  "limitations": [
+    "Physical full stroke not measured",
+    "No object/self-occlusion guarantee during arbitrary grasps",
+    "Texture, lighting, exposure and motion affect stereo depth",
+    "Full 16:9 image assumed; policy centre-cropping can discard fingers"
+  ],
+  "policy_detail": {
+    "measurement": "Projected reference geometry only; does not assert the entire rail is unoccluded.",
+    "rail_length_mm": 43.5187,
+    "rail_length_at_224_width_px": 17.375331400671023,
+    "one_mm_XYZ_displacement_at_224_width_px": [
+      0.8859037970492067,
+      0.38874604060905554,
+      0.7763227153222594
+    ]
+  }
+}
